@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:LockStore/LockStore.xcodeproj">
+      location = "group:LockStore/NimbusKitLockStore.xcodeproj">
    </FileRef>
 </Workspace>

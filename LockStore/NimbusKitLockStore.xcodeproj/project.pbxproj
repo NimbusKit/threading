@@ -26,9 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		66975312196525330016D50E /* libLockStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLockStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		66975312196525330016D50E /* libNimbusKitLockStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNimbusKitLockStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		66975315196525330016D50E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		66975319196525330016D50E /* LockStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LockStore-Prefix.pch"; path = "LockStore/LockStore-Prefix.pch"; sourceTree = "<group>"; };
+		66975319196525330016D50E /* NimbusKitLockStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NimbusKitLockStore-Prefix.pch"; path = "LockStore/NimbusKitLockStore-Prefix.pch"; sourceTree = "<group>"; };
 		66975323196525330016D50E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		66975326196525330016D50E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		6697533D1965254E0016D50E /* NILockStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NILockStore.h; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 				66975346196526520016D50E /* CONTRIBUTING.md */,
 				66975347196526520016D50E /* LICENSE */,
 				66975348196526520016D50E /* PATENTS */,
-				66975319196525330016D50E /* LockStore-Prefix.pch */,
+				66975319196525330016D50E /* NimbusKitLockStore-Prefix.pch */,
 				6697533C1965254E0016D50E /* src */,
 				66975314196525330016D50E /* Frameworks */,
 				66975313196525330016D50E /* Products */,
@@ -69,7 +69,7 @@
 		66975313196525330016D50E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66975312196525330016D50E /* libLockStore.a */,
+				66975312196525330016D50E /* libNimbusKitLockStore.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,9 +110,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		66975311196525330016D50E /* LockStore */ = {
+		66975311196525330016D50E /* NimbusKitLockStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66975335196525330016D50E /* Build configuration list for PBXNativeTarget "LockStore" */;
+			buildConfigurationList = 66975335196525330016D50E /* Build configuration list for PBXNativeTarget "NimbusKitLockStore" */;
 			buildPhases = (
 				6697530E196525330016D50E /* Sources */,
 				6697530F196525330016D50E /* Frameworks */,
@@ -124,9 +124,9 @@
 			);
 			dependencies = (
 			);
-			name = LockStore;
+			name = NimbusKitLockStore;
 			productName = LockStore;
-			productReference = 66975312196525330016D50E /* libLockStore.a */;
+			productReference = 66975312196525330016D50E /* libNimbusKitLockStore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +138,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = NimbusKit;
 			};
-			buildConfigurationList = 6697530D196525330016D50E /* Build configuration list for PBXProject "LockStore" */;
+			buildConfigurationList = 6697530D196525330016D50E /* Build configuration list for PBXProject "NimbusKitLockStore" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -150,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66975311196525330016D50E /* LockStore */,
+				66975311196525330016D50E /* NimbusKitLockStore */,
 			);
 		};
 /* End PBXProject section */
@@ -258,9 +258,9 @@
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/LockStore.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LockStore/LockStore-Prefix.pch";
+				GCC_PREFIX_HEADER = "LockStore/NimbusKitLockStore-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NimbusKitLockStore;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
@@ -274,9 +274,9 @@
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/LockStore.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LockStore/LockStore-Prefix.pch";
+				GCC_PREFIX_HEADER = "LockStore/NimbusKitLockStore-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NimbusKitLockStore;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
@@ -286,7 +286,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6697530D196525330016D50E /* Build configuration list for PBXProject "LockStore" */ = {
+		6697530D196525330016D50E /* Build configuration list for PBXProject "NimbusKitLockStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66975333196525330016D50E /* Debug */,
@@ -295,13 +295,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66975335196525330016D50E /* Build configuration list for PBXNativeTarget "LockStore" */ = {
+		66975335196525330016D50E /* Build configuration list for PBXNativeTarget "NimbusKitLockStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66975336196525330016D50E /* Debug */,
 				66975337196525330016D50E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

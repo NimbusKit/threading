@@ -10,13 +10,14 @@
 
 dispatch_block_t NINamedDispatchBlock(NSString* name, dispatch_block_t block) {
   return ^{
-    NSString* oldName = [[NSThread currentThread] name];
-    [[NSThread currentThread] setName:name];
+    NSThread* currentThread = [NSThread currentThread];
+    NSString* oldName = currentThread.name;
+    currentThread.name = name;
 
     if (block) {
       block();
     }
 
-    [[NSThread currentThread] setName:oldName];
+    currentThread.name = oldName;
   };
 }

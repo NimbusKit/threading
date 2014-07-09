@@ -6,23 +6,27 @@
  patent rights can be found in the PATENTS file in the same directory and url.
  */
 
-#ifndef _NIMBUSKIT_LOCKSTORE_H_
-#define _NIMBUSKIT_LOCKSTORE_H_
+#ifndef _NIMBUSKIT_THREADING_H_
+#define _NIMBUSKIT_THREADING_H_
 
 #import "NILockStore.h"
 
 #pragma mark Current Version
 
-#ifndef NIMBUSKIT_LOCKSTORE_VERSION
-#define NIMBUSKIT_LOCKSTORE_VERSION NIMBUSKIT_LOCKSTORE_1_0_0
+#ifndef NIMBUSKIT_THREADING_VERSION
+#define NIMBUSKIT_THREADING_VERSION NIMBUSKIT_LOCKSTORE_1_0_0
 #endif
 
-#endif // #ifndef _NIMBUSKIT_LOCKSTORE_H_
+#endif // #ifndef _NIMBUSKIT_THREADING_H_
 
 #pragma mark All Known Versions
 
 #ifndef NIMBUSKIT_LOCKSTORE_1_0_0
 #define NIMBUSKIT_LOCKSTORE_1_0_0 10000
+#endif
+
+#ifndef NIMBUSKIT_THREADING_1_1_0
+#define NIMBUSKIT_THREADING_1_1_0 10100
 #endif
 
 #pragma mark Version Check
@@ -40,8 +44,8 @@
 #define NI_MACRO_INLINE_STR(str) NI_MACRO_DEFER(NI_MACRO_STR, str)
 #endif
 
-#if NIMBUSKIT_LOCKSTORE_VERSION < NIMBUSKIT_LOCKSTORE_1_0_0
-#pragma message "An older version (" NI_MACRO_INLINE_STR(NIMBUSKIT_LOCKSTORE_VERSION) ") of NimbusKit's Lock Store was imported prior to this version (" NI_MACRO_INLINE_STR(NIMBUSKIT_LOCKSTORE_1_0_0) "). This may cause unexpected behavior. You may suppress this warning by defining NI_SUPPRESS_VERSION_WARNINGS"
-#endif // NIMBUSKIT_LOCKSTORE_VERSION check
+#if NIMBUSKIT_THREADING_VERSION < NIMBUSKIT_THREADING_1_1_0
+#pragma message "An older version (" NI_MACRO_INLINE_STR(NIMBUSKIT_THREADING_VERSION) ") of NimbusKit's Threading was imported prior to this version (" NI_MACRO_INLINE_STR(NIMBUSKIT_THREADING_1_1_0) "). This may cause unexpected behavior. You may suppress this warning by defining NI_SUPPRESS_VERSION_WARNINGS"
+#endif // NIMBUSKIT_THREADING_VERSION check
 
 #endif // #ifndef NI_SUPPRESS_VERSION_WARNINGS

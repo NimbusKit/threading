@@ -1,8 +1,8 @@
-<!--dox @defgroup NimbusKitLockStore Lock Store -->
-<div id="github" feature="LockStore"></div>
+<!--dox @defgroup NimbusKitThreading Threading -->
+<div id="github" feature="Threading"></div>
 ![](https://github.com/NimbusKit/lockstore/raw/master/docs/gfx/lockstore_banner.gif "")
 
-Lock Store provides a simple mechanism for key-based, read/write access to shared data across multiple threads.
+The Threading library provides general-purpose tools for working in multi-threading environments.
 
 Adding it to your Project
 =========================
@@ -12,12 +12,12 @@ You have two options for adding this library to your project: as a framework or 
 As a Framework
 --------------
 
-Drag the LockStore.xcodeproj file into your app's Xcode project. Make sure that it is being added as a dependency.
+Drag the Threading.xcodeproj file into your app's Xcode project. Make sure that it is being added as a dependency.
 
 With the library added to your project, you can now import the library header.
 
 ```objc
-#import <NimbusKitLockStore/NimbusKitLockStore.h>
+#import <NimbusKitThreading/NimbusKitThreading.h>
 ```
 
 As Source
@@ -28,11 +28,14 @@ Drag all of the files from the `src` directory into your app.
 With the library added to your project, you can now import the library header.
 
 ```objc
-#import "NimbusKitLockStore.h"
+#import "NimbusKitThreading.h"
 ```
 
-Example
-=======
+What's Included
+===============
+
+NILockStore
+----------
 
 NILockStore plays nicely with Objective-C's `@synchronized` for locking on a per-object basis.
 
@@ -63,7 +66,7 @@ Initial release.
 Credits
 =======
 
-Lock Store was built by [Jeff Verkoeyen](http://jeffverkoeyen.com/) ([featherless](http://twitter.com/)).
+Threading was built by [Jeff Verkoeyen](http://jeffverkoeyen.com/) ([featherless](http://twitter.com/)).
 
 Contributors
 ------------
@@ -73,4 +76,4 @@ You can be the first! [Open a pull request now](https://github.com/NimbusKit/loc
 License
 =======
 
-NimbusKit's Lock Store is licensed under the BSD three-clause license. For a more permissive license (no redistribution of copyright notice, etc.), please contact Jeff at jverkoey@gmail.com for pricing.
+NimbusKit's Threading is licensed under the BSD three-clause license. For a more permissive license (no redistribution of copyright notice, etc.), please contact Jeff at jverkoey@gmail.com for pricing.

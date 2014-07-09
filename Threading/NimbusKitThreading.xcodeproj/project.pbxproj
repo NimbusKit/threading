@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		66975316196525330016D50E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66975315196525330016D50E /* Foundation.framework */; };
 		6697533F1965254E0016D50E /* NILockStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6697533E1965254E0016D50E /* NILockStore.m */; };
-		66975343196525DF0016D50E /* NimbusKitLockStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 66975340196525CB0016D50E /* NimbusKitLockStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66975343196525DF0016D50E /* NimbusKitThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = 66975340196525CB0016D50E /* NimbusKitThreading.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66975344196525DF0016D50E /* NILockStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6697533D1965254E0016D50E /* NILockStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -26,14 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		66975312196525330016D50E /* libNimbusKitLockStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNimbusKitLockStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		66975312196525330016D50E /* libNimbusKitThreading.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNimbusKitThreading.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		66975315196525330016D50E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		66975319196525330016D50E /* NimbusKitLockStore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NimbusKitLockStore-Prefix.pch"; path = "LockStore/NimbusKitLockStore-Prefix.pch"; sourceTree = "<group>"; };
+		66975319196525330016D50E /* NimbusKitThreading-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NimbusKitThreading-Prefix.pch"; path = "Threading/NimbusKitThreading-Prefix.pch"; sourceTree = "<group>"; };
 		66975323196525330016D50E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		66975326196525330016D50E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		6697533D1965254E0016D50E /* NILockStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NILockStore.h; sourceTree = "<group>"; };
 		6697533E1965254E0016D50E /* NILockStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NILockStore.m; sourceTree = "<group>"; };
-		66975340196525CB0016D50E /* NimbusKitLockStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NimbusKitLockStore.h; sourceTree = "<group>"; };
+		66975340196525CB0016D50E /* NimbusKitThreading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NimbusKitThreading.h; sourceTree = "<group>"; };
 		669753451965264B0016D50E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		66975346196526520016D50E /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = CONTRIBUTING.md; path = ../CONTRIBUTING.md; sourceTree = "<group>"; };
 		66975347196526520016D50E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 				66975346196526520016D50E /* CONTRIBUTING.md */,
 				66975347196526520016D50E /* LICENSE */,
 				66975348196526520016D50E /* PATENTS */,
-				66975319196525330016D50E /* NimbusKitLockStore-Prefix.pch */,
+				66975319196525330016D50E /* NimbusKitThreading-Prefix.pch */,
 				6697533C1965254E0016D50E /* src */,
 				66975314196525330016D50E /* Frameworks */,
 				66975313196525330016D50E /* Products */,
@@ -69,7 +69,7 @@
 		66975313196525330016D50E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66975312196525330016D50E /* libNimbusKitLockStore.a */,
+				66975312196525330016D50E /* libNimbusKitThreading.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 		6697533C1965254E0016D50E /* src */ = {
 			isa = PBXGroup;
 			children = (
-				66975340196525CB0016D50E /* NimbusKitLockStore.h */,
+				66975340196525CB0016D50E /* NimbusKitThreading.h */,
 				6697533D1965254E0016D50E /* NILockStore.h */,
 				6697533E1965254E0016D50E /* NILockStore.m */,
 			);
@@ -103,16 +103,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				66975344196525DF0016D50E /* NILockStore.h in Headers */,
-				66975343196525DF0016D50E /* NimbusKitLockStore.h in Headers */,
+				66975343196525DF0016D50E /* NimbusKitThreading.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		66975311196525330016D50E /* NimbusKitLockStore */ = {
+		66975311196525330016D50E /* NimbusKitThreading */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66975335196525330016D50E /* Build configuration list for PBXNativeTarget "NimbusKitLockStore" */;
+			buildConfigurationList = 66975335196525330016D50E /* Build configuration list for PBXNativeTarget "NimbusKitThreading" */;
 			buildPhases = (
 				6697530E196525330016D50E /* Sources */,
 				6697530F196525330016D50E /* Frameworks */,
@@ -124,9 +124,9 @@
 			);
 			dependencies = (
 			);
-			name = NimbusKitLockStore;
-			productName = LockStore;
-			productReference = 66975312196525330016D50E /* libNimbusKitLockStore.a */;
+			name = NimbusKitThreading;
+			productName = Threading;
+			productReference = 66975312196525330016D50E /* libNimbusKitThreading.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +138,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = NimbusKit;
 			};
-			buildConfigurationList = 6697530D196525330016D50E /* Build configuration list for PBXProject "NimbusKitLockStore" */;
+			buildConfigurationList = 6697530D196525330016D50E /* Build configuration list for PBXProject "NimbusKitThreading" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -150,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66975311196525330016D50E /* NimbusKitLockStore */,
+				66975311196525330016D50E /* NimbusKitThreading */,
 			);
 		};
 /* End PBXProject section */
@@ -256,11 +256,11 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
-				DSTROOT = /tmp/LockStore.dst;
+				DSTROOT = /tmp/Threading.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LockStore/NimbusKitLockStore-Prefix.pch";
+				GCC_PREFIX_HEADER = "Threading/NimbusKitThreading-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = NimbusKitLockStore;
+				PRODUCT_NAME = NimbusKitThreading;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
@@ -272,11 +272,11 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
-				DSTROOT = /tmp/LockStore.dst;
+				DSTROOT = /tmp/Threading.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LockStore/NimbusKitLockStore-Prefix.pch";
+				GCC_PREFIX_HEADER = "Threading/NimbusKitThreading-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = NimbusKitLockStore;
+				PRODUCT_NAME = NimbusKitThreading;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
@@ -286,7 +286,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6697530D196525330016D50E /* Build configuration list for PBXProject "NimbusKitLockStore" */ = {
+		6697530D196525330016D50E /* Build configuration list for PBXProject "NimbusKitThreading" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66975333196525330016D50E /* Debug */,
@@ -295,7 +295,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66975335196525330016D50E /* Build configuration list for PBXNativeTarget "NimbusKitLockStore" */ = {
+		66975335196525330016D50E /* Build configuration list for PBXNativeTarget "NimbusKitThreading" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66975336196525330016D50E /* Debug */,

@@ -11,9 +11,9 @@
 		6697533F1965254E0016D50E /* NILockStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6697533E1965254E0016D50E /* NILockStore.m */; };
 		66975343196525DF0016D50E /* NimbusKitThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = 66975340196525CB0016D50E /* NimbusKitThreading.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66975344196525DF0016D50E /* NILockStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6697533D1965254E0016D50E /* NILockStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66A571C7196D95C600CF30A8 /* NIDispatchTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A571C5196D95C600CF30A8 /* NIDispatchTools.h */; };
+		66A571C7196D95C600CF30A8 /* NIDispatchTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A571C5196D95C600CF30A8 /* NIDispatchTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66A571C8196D95C600CF30A8 /* NIDispatchTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A571C6196D95C600CF30A8 /* NIDispatchTools.m */; };
-		66A571CB196D96B900CF30A8 /* NIDispatchProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A571C9196D96B900CF30A8 /* NIDispatchProxy.h */; };
+		66A571CB196D96B900CF30A8 /* NIDispatchProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A571C9196D96B900CF30A8 /* NIDispatchProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66A571CC196D96B900CF30A8 /* NIDispatchProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A571CA196D96B900CF30A8 /* NIDispatchProxy.m */; };
 /* End PBXBuildFile section */
 

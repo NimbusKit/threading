@@ -1,5 +1,6 @@
 <!--dox @defgroup NimbusKitThreading Threading -->
 <div id="github" feature="Threading"></div>
+
 ![](https://github.com/NimbusKit/lockstore/raw/master/docs/gfx/lockstore_banner.gif "")
 
 The Threading library provides general-purpose tools for working in multi-threading environments.

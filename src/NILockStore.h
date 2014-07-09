@@ -57,12 +57,12 @@ NILockStore* lockStore = [NILockStore new];
  * > Effort should be made to minimize the amount of time spent locking any given object.
  *
  * @class NILockStore
- * @ingroup NimbusKitLockStore
+ * @ingroup NimbusKitThreading
  */
 
 /**
  * @class NILockObject
- * @ingroup NimbusKitLockStore
+ * @ingroup NimbusKitThreading
  */
 
 /** @name Accessing Lockable Objects */

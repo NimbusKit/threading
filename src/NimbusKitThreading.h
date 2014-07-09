@@ -9,12 +9,14 @@
 #ifndef _NIMBUSKIT_THREADING_H_
 #define _NIMBUSKIT_THREADING_H_
 
+#import "NIDispatchProxy.h"
+#import "NIDispatchTools.h"
 #import "NILockStore.h"
 
 #pragma mark Current Version
 
 #ifndef NIMBUSKIT_THREADING_VERSION
-#define NIMBUSKIT_THREADING_VERSION NIMBUSKIT_LOCKSTORE_1_0_0
+#define NIMBUSKIT_THREADING_VERSION NIMBUSKIT_THREADING_DEV
 #endif
 
 #endif // #ifndef _NIMBUSKIT_THREADING_H_
@@ -25,8 +27,8 @@
 #define NIMBUSKIT_LOCKSTORE_1_0_0 10000
 #endif
 
-#ifndef NIMBUSKIT_THREADING_1_1_0
-#define NIMBUSKIT_THREADING_1_1_0 10100
+#ifndef NIMBUSKIT_THREADING_DEV
+#define NIMBUSKIT_THREADING_DEV 10100
 #endif
 
 #pragma mark Version Check
@@ -44,8 +46,8 @@
 #define NI_MACRO_INLINE_STR(str) NI_MACRO_DEFER(NI_MACRO_STR, str)
 #endif
 
-#if NIMBUSKIT_THREADING_VERSION < NIMBUSKIT_THREADING_1_1_0
-#pragma message "An older version (" NI_MACRO_INLINE_STR(NIMBUSKIT_THREADING_VERSION) ") of NimbusKit's Threading was imported prior to this version (" NI_MACRO_INLINE_STR(NIMBUSKIT_THREADING_1_1_0) "). This may cause unexpected behavior. You may suppress this warning by defining NI_SUPPRESS_VERSION_WARNINGS"
+#if NIMBUSKIT_THREADING_VERSION < NIMBUSKIT_THREADING_DEV
+#pragma message "An older version (" NI_MACRO_INLINE_STR(NIMBUSKIT_THREADING_VERSION) ") of NimbusKit's Threading was imported prior to this version (" NI_MACRO_INLINE_STR(NIMBUSKIT_THREADING_DEV) "). This may cause unexpected behavior. You may suppress this warning by defining NI_SUPPRESS_VERSION_WARNINGS"
 #endif // NIMBUSKIT_THREADING_VERSION check
 
 #endif // #ifndef NI_SUPPRESS_VERSION_WARNINGS

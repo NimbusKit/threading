@@ -11,15 +11,15 @@
 @class NILockObject;
 
 /**
- * NILockStore provides thread-safe, read-write, key-based access to a dictionary of objects.
+ * @brief NILockStore provides thread-safe, read-write, key-based access to a dictionary of objects.
  */
 @interface NILockStore : NSObject
 - (NILockObject *)objectForKeyedSubscript:(id)key;
 @end
 
 /**
- * NILockObject stores the object for a specific key in NILockStore and should be used as a
- * consistent `@synchronized` lock.
+ * @brief NILockObject stores the object for a specific key in NILockStore and should be used as a
+ *        consistent `@synchronized` lock.
  */
 @interface NILockObject : NSObject
 @property (nonatomic, strong) id object;

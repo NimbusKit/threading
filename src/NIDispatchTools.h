@@ -15,8 +15,19 @@ dispatch_block_t NINamedDispatchBlock(NSString* name, dispatch_block_t block);
 /** @name Dispatch Utilities */
 
 /**
- * Returns a dispatch_block_t that will set the name of the NSThread executing the returned block
- * to \p name, execute \p block, and then reset the NSThread's name to the old value.
+ * @brief Returns a dispatch_block_t that will set the name of the NSThread executing the returned
+ *        block to \p name, execute \p block, and then reset the NSThread's name to the old value.
+ *
+ * Typical use:
+@code
+NSString* threadName = ...;
+dispatch_block_t work = ^{
+  // Thread work
+};
+
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
+               NINamedDispatchBlock(threadName, work));
+@endcode
  *
  * @fn NINamedDispatchBlock(NSString* name, dispatch_block_t block);
  * @ingroup NimbusKitThreading

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- * The NIDispatchProxy class dispatches invocations made to it to a target thread.
+ * @brief The NIDispatchProxy class dispatches invocations made to it to a target thread.
  */
 @interface NIDispatchProxy : NSProxy
 

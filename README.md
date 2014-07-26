@@ -94,7 +94,7 @@ NIDispatchProxy is an NSProxy implementation that can be used to post invocation
 Version History
 ===============
 
-1.1.0 TBD
+1.1.0 on July 26, 2014
 -----
 
 New dispatch features.
